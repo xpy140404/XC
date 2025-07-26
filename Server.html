@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XC服务器官网 | 服务器列表</title>
+    <style>
+        /* 基础样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f7fa;
+        }
+        
+        /* 英雄区域样式 */
+        .hero {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* 服务器列表样式 */
+        .server-list {
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            padding: 0 1.5rem;
+        }
+        
+        .server-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .server-card h2 {
+            color: #444;
+            margin-bottom: 0.5rem;
+        }
+        
+        .server-card p {
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+        
+        .server-status {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            background: #4CAF50;
+            color: white;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .server-list {
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="logo-container">
+            <h1>XC服务器</h1>
+            <p>服务器列表</p>
+        </div>
+    </section>
+
+    <section class="server-list">
+        <h2>服务器列表</h2>
+        <p class="server-count">当前已有 1 个服务器</p>
+        
+        <div class="server-card">
+            <h3>XC地铁服(官服)</h3>
+           <p>状态: <span class="server-status">开放中</span></p>
+            <!-- 可以添加更多服务器信息 -->
+        </div>
+        
+
+    </section>
+</body>
+</html>
